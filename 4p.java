@@ -2,13 +2,16 @@ public class 4p {
     int nEmp;
     String sName;
     long nSal;
+    Employee(int empID)
     int aDesig[] = new int[5];
     void mCalcIncomeTax(long nSal){
         System.out.print("return income tax");
     }
     public static void main(String[] args){
-         
+         Scanner sc = new Scanner(Systen.in);
         Employee e1 = new Employee();
+        Employee e[]= new Employee[100];
+        for(int i=0;i<10;i++)
         e1.nemp = 1234;
         e1.sName = Abhishek;
         employee e2 = new Employee();
