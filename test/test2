@@ -1,0 +1,45 @@
+abstract class booking{
+    int amount;
+    int refund;
+    String customerId;
+
+  booking (int amount,int refund){
+    this.amount=amount;
+    this.refund=refund;
+    this.customerId=customerId;
+  }
+   void price(){
+    System.out.println("amount : "+amount ,"refund price : " + refund,"customerId : " + customerId);
+   }
+abstract void bookingticket();
+}
+interface refundamount{
+    void refundcost();
+}
+class customer extends booking implements refundamount{
+    custome(int amount, int refund,String customerId ) {
+        super(amount, refund,customerId);)
+}
+ @Override
+    void bookingticket() {
+        System.out.println( customerId+ " customerId");
+    }
+@Override
+    public void refundamount() {
+        System.out.println(refund + " price");
+    }
+    @Override
+     public void bookingticket() {
+        System.out.println(amount + " amountprice");
+    }
+
+public class test2 {
+    public static void main(String[] args) {
+        customer c1= new customer("suhani",200,hsegjd19);
+
+        c1.bookingticket();
+
+        c1.refundamount();
+        c1.bookingticket();
+    }
+}
